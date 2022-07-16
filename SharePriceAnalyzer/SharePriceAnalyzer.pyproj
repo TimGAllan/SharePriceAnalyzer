@@ -21,7 +21,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="FetchStockPriceHistoryMinute.py" />
+    <Compile Include="FetchStockPriceHistory.py" />
     <Compile Include="FetchStockInfo.py" />
     <Compile Include="SharePriceAnalyzer.py" />
   </ItemGroup>

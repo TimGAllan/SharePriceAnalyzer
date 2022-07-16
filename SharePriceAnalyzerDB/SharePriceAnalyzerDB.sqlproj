@@ -73,7 +73,7 @@
     <Build Include="Schemas\Dimension.sql" />
     <Build Include="Schemas\Fact.sql" />
     <Build Include="Tables\1_Increment\Increment.StockPriceHistoryMinute.sql" />
-    <Build Include="Tables\2_Staging\Staging.StockPrices.sql" />
+    <Build Include="Tables\2_Staging\Staging.StockPriceHistoryMinute.sql" />
     <Build Include="Tables\2_Staging\Staging.Stocks.sql" />
     <Build Include="Tables\3_Dimension\Dimension.Stocks.sql" />
     <Build Include="Tables\Fact\Fact.StockPriceHistoryMinute.sql" />
@@ -81,6 +81,11 @@
     <Build Include="Procedures\Staging\Staging.PopStocks.sql" />
     <Build Include="Procedures\Fact\Fact.PopStockPriceHistoryMinute.sql" />
     <Build Include="Procedures\Dimension\Dimension.PopStocks.sql" />
+    <Build Include="Tables\1_Increment\Increment.StockPriceHistoryDay.sql" />
+    <Build Include="Tables\2_Staging\Staging.StockPriceHistoryDay.sql" />
+    <Build Include="Procedures\Staging\Staging.PopStockPriceHistoryDay.sql" />
+    <Build Include="Tables\Fact\Fact.StockPriceHistoryDay.sql" />
+    <Build Include="Procedures\Fact\Fact.PopStockPriceHistoryDay.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="SharePriceAnalyzerDB.publish.xml" />
