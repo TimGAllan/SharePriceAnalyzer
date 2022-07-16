@@ -17,9 +17,10 @@ def FetchStockInfo(symbol):
 	cnxn = pyodbc.connect(conn_str)
 	cursor = cnxn.cursor()
 
-	cursor.execute('INSERT Increment.Stocks([Symbol],[StockName]) values (?,?)', 
+	cursor.execute('INSERT Increment.Stocks([Symbol],[StockName],[Currency]) values (?,?,?)', 
 				a['symbol'], 
-				a['longName'])
+				a['longName'],
+				a['financialCurrency'])
 	cnxn.commit()
 
 	cursor.execute('EXEC Staging.PopStocks')
