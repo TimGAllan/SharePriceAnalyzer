@@ -4,7 +4,7 @@ import pyodbc
 import datetime as dt
 
 def FetchStockPriceHistoryMinute(Stocksymbol):
-	fromDate = dt.datetime.today() + dt.timedelta(days = -6)
+	fromDate = dt.datetime.today() + dt.timedelta(days = -1)
 	fromDate = fromDate.strftime('%Y-%m-%d')
 
 	toDate = dt.datetime.today() + dt.timedelta(days = 1)
@@ -43,7 +43,7 @@ def FetchStockPriceHistoryMinute(Stocksymbol):
 						row['StockSplits'])
 		cnxn.commit()
 
-	print(Stocksymbol)
+	print(dt.datetime.now().strftime("%H:%M:%S"),Stocksymbol)
 
 	cursor.execute('EXEC Staging.PopStockPriceHistoryMinute')
 	cnxn.commit()
