@@ -1,7 +1,6 @@
 import yfinance as yf
 import pandas as pd
 import pyodbc
-import sqlalchemy
 import datetime as dt
 
 def FetchStockPriceHistoryMinute(Stocksymbol):
