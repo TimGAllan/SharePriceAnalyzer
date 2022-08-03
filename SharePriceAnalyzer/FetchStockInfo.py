@@ -4,8 +4,8 @@ import pyodbc
 import sqlalchemy
 import datetime as dt
 
-def FetchStockInfo(symbol):
-	ticker = yf.Ticker(symbol)
+def FetchStockInfo(Stocksymbol):
+	ticker = yf.Ticker(Stocksymbol)
 	a = ticker.info
 	conn_str = (
 	r'DRIVER={SQL Server Native Client 11.0};'
@@ -13,6 +13,8 @@ def FetchStockInfo(symbol):
 	r'DATABASE=SharePriceAnalyzerDB;'
 	r'Trusted_Connection=yes;'
 	)
+
+	print(dt.datetime.now().strftime("%H:%M:%S"),"Updating Stock Info for " + Stocksymbol)
 
 	cnxn = pyodbc.connect(conn_str)
 	cursor = cnxn.cursor()

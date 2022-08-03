@@ -43,7 +43,7 @@ def FetchStockPriceHistoryMinute(Stocksymbol):
 						row['StockSplits'])
 		cnxn.commit()
 
-	print(dt.datetime.now().strftime("%H:%M:%S"),Stocksymbol)
+	print(dt.datetime.now().strftime("%H:%M:%S"),"Fetching Live Stock Price for " + Stocksymbol)
 
 	cursor.execute('EXEC Staging.PopStockPriceHistoryMinute')
 	cnxn.commit()
@@ -92,6 +92,8 @@ def FetchStockPriceHistoryDay(Stocksymbol):
 						row['Dividends'],
 						row['StockSplits'])
 		cnxn.commit()
+
+	print(dt.datetime.now().strftime("%H:%M:%S"),"Fetching daily Stock Price History for " + Stocksymbol)
 
 	cursor.execute('EXEC Staging.PopStockPriceHistoryDay')
 	cnxn.commit()
