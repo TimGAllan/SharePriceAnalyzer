@@ -31,7 +31,7 @@ def FetchStockPriceHistoryMinute(Stocksymbol):
 	cnxn.commit()
 
 	for index,row in df.iterrows():
-		cursor.execute('INSERT Increment.StockPriceHistoryMinute([Symbol],[Stocktime],[Open],[High],[Low],[Close],[Volume],[Dividends],[StockSplits]) values (?,?,?,?,?,?,?,?,?)', 
+		cursor.execute('INSERT Increment.StockPriceHistoryMinute([Symbol],[Stockdatetime],[Open],[High],[Low],[Close],[Volume],[Dividends],[StockSplits]) values (?,?,?,?,?,?,?,?,?)', 
 						row['Symbol'], 
 						row['Stocktime'], 
 						row['Open'],

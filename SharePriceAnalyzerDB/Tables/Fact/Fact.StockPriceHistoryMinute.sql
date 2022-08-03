@@ -11,5 +11,5 @@
 	[Volume]		float		not null,
 	Dividends		float		not null,
 	StockSplits		float		not null,
-	PRIMARY KEY(Symbol,Stocktime)
+	PRIMARY KEY(Symbol,StockDatetime)
 )
