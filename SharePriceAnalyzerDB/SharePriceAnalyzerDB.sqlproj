@@ -66,6 +66,7 @@
     <Folder Include="Procedures\Staging" />
     <Folder Include="Procedures\Dimension" />
     <Folder Include="Procedures\Fact" />
+    <Folder Include="Views" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Schemas\Increment.sql" />
@@ -88,6 +89,7 @@
     <Build Include="Procedures\Fact\Fact.PopStockPriceHistoryDay.sql" />
     <Build Include="Tables\3_Dimension\Dimension.Calendar.sql" />
     <Build Include="Procedures\Dimension\Dimension.PopCalendar.sql" />
+    <Build Include="Views\vw_Live_Price_Summary.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="SharePriceAnalyzerDB.publish.xml" />
