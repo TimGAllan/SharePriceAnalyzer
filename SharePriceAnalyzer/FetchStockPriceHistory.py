@@ -1,5 +1,4 @@
 import yfinance as yf
-import pandas as pd
 import pyodbc
 import datetime as dt
 

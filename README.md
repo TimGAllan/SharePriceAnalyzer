@@ -9,7 +9,7 @@ The Python Script `SharePriceAnalyzer.py` call boths the Yahoo API functions and
 
 The Script will initially load daily price history. Then every 60 seconds, the script will load the current quote prices of the stocks. The command Shell window will state the current process.
 
-![Foo](SharePriceAnalyzer/Assets/Images/CMDShell.jpg)
+![Foo](SharePriceAnalyzer/Assets/Images/CMDshell.jpg)
 
 To stop the Process, simply press and hold the `Esc` key for a couple of seconds until the process outputs `Stopping...` to the shell window.
 
