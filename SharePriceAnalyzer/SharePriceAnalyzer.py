@@ -11,6 +11,8 @@ def exitCheck():
 		sys.exit()
 
 def Main():
+
+	# Change the line below to include different Stocks
 	StockSymbols = ['ADEN.SW','RAND.AS','MAN','HAS.L','RHI','KELYA']
 
 	for x in StockSymbols:
