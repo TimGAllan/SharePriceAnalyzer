@@ -2,6 +2,11 @@
 
 A tool that collect live Share price data using a Yahoo Finance API and writes to a very simple Kimball Star Schema Datawarehouse in SQL Server.
 
+Click below to watch the walkthrough video:
+
+[<img src="SharePriceAnalyzer/Assets/Images/Thumbnail.jpg">](https://youtu.be/wGXBDV3br5w)
+
+
 # Usage
 ## The Data Collection process
 
