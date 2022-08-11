@@ -9,7 +9,7 @@ import sys
 def exitCheck():
 	if keyboard.is_pressed("esc"):
 		print(dt.datetime.now().strftime("%H:%M:%S"), "Stopping...")
-		sys.exit()
+		sys.exit(0)
 
 def Main():
 
